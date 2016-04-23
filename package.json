@@ -1,0 +1,25 @@
+{
+  "name": "gulp-underscore-tpl",
+  "version": "1.0.0",
+  "description": "gulp underscore template",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.1",
+    "underscore": "^1.8.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/longjiarun/gulp-underscore-tpl.git"
+  },
+  "keywords": [
+    "underscore",
+    "template",
+    "gulp"
+  ],
+  "author": "longjia<https://github.com/longjiarun>",
+  "license": "MIT"
+}
