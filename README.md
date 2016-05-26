@@ -1,20 +1,41 @@
 ## Install
 
 ```
-npm install gulp-underscore-tpl --save
+npm install gulp-compile-template --save
 ```
 
 ## Options
 
 options see [underscore template](http://underscorejs.org/#template).
 
+options see [ejs template](https://github.com/mde/ejs).
+
+### options config
+```
+
+{
+	name: 'ejs',  //use template name ,ejs or underscore (default)
+	ejs:{
+		/* ejs options see ejs template*/
+	},
+	underscore:{
+		/* underscore options see underscore template */
+	}
+}
+
+```
+
 ## How to use
 
 ```
-var template = require('gulp-underscore-tpl')
+var template = require('gulp-compile-template')
 gulp.task('tpl', function() {
     return gulp.src('tpl/*.html')
-        .pipe(template(/*options*/))
+        .pipe(template({
+        	underscore: {
+                variable: 'data'
+            }
+        }))
         .pipe(gulp.dest('js/tpl'))
 });
 ```

@@ -1,9 +1,11 @@
 {
-  "name": "gulp-underscore-tpl",
+  "name": "gulp-compile-template",
   "version": "1.0.0",
-  "description": "gulp underscore template",
+  "description": "gulp compile template",
   "main": "index.js",
   "dependencies": {
+    "ejs": "^2.4.2",
+    "extend": "^3.0.0",
     "gulp-util": "^3.0.7",
     "through2": "^2.0.1",
     "underscore": "^1.8.3"
@@ -13,12 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/longjiarun/gulp-underscore-tpl.git"
+    "url": "https://github.com/longjiarun/gulp-compile-template.git"
   },
   "keywords": [
-    "underscore",
+    "compile",
     "template",
-    "gulp"
+    "gulp",
+    "underscore",
+    "ejs"
   ],
   "author": "longjia<https://github.com/longjiarun>",
   "license": "MIT"
