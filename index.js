@@ -1,4 +1,5 @@
 var gutil = require('gulp-util'),
+    path = require('path'),
     extend = require("extend"),
     through = require('through2'),
     _ = require('underscore'),
@@ -19,7 +20,8 @@ module.exports = function (options) {
             name:'underscore',
             ejs: {
                 client : true,
-                compileDebug:false
+                compileDebug:false,
+                filename : path.relative(process.cwd(), file.path)
             }
         },options);
 

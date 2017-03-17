@@ -1,6 +1,6 @@
 {
   "name": "gulp-compile-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "gulp compile template",
   "main": "index.js",
   "dependencies": {
